@@ -130,6 +130,57 @@ body {
 
 
 /* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 40px;
+  }
+
+  .hero-name {
+    font-size: 46px;
+  }
+
+  .nav-logo {
+    width: 38px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .links a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 25px;
+  }
+
+  .links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .links a {
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+/* =========================
    ABOUT (DIMMED BG IMAGE)
 ========================= */
 .about-us {
@@ -367,15 +418,10 @@ footer {
   position: relative;
   padding: 60px;
   color: #fff;
-
-  /* Fallback color */
   background-color: #000;
-
-  
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
     url("../images/heroimage2.jpg");
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -433,7 +479,61 @@ footer {
   text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
-/* Copyright */
+/* CONTACT ICON LIST */
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-list img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.social-links a img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  transition: 0.3s ease;
+}
+
+.social-links a span {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.social-links a:hover {
+  color: var(--brand-gold);
+  transform: translateX(6px);
+}
+
+.social-links a:hover img {
+  filter: brightness(1) sepia(1) saturate(6) hue-rotate(10deg);
+  opacity: 1;
+}
+
+/* COPYRIGHT */
 .copyright {
   margin-top: 50px;
   text-align: center;
@@ -476,48 +576,28 @@ footer {
 /* =========================
    RESPONSIVE
 ========================= */
-@media (max-width: 900px) {
-  .about-content {
+@media (max-width: 768px) {
+  footer {
+    padding: 50px 25px;
+  }
+
+  .footer-container {
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .hero {
-    padding: 40px;
+  .footer-links {
+    gap: 40px;
   }
 
-  .hero-name {
-    font-size: 46px;
+  .whatsapp-float {
+    width: 56px;
+    height: 56px;
   }
 
-  .nav-logo {
-    width: 38px;
-  }
-
-  .company-name {
-    font-size: 18px;
-  }
-
-  .links a {
-    margin-left: 15px;
-    font-size: 14px;
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
   }
 }
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px 25px;
-  }
-
-  .links {
-    display: flex;
-    gap: 15px;
-  }
-
-  .links a {
-    margin-left: 0;
-  }
-}
-
 
