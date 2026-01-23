@@ -57,7 +57,7 @@ body {
 /* Nav links */
 .links a {
   margin-left: 25px;
-  color: #05a0ee;
+  color: #6fc7f3;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -114,7 +114,7 @@ body {
 }
 
 .contact-btn {
-  background: linear-gradient(135deg, #1ed760, #0fa958);
+  background: #6fc7f3;
   padding: 14px 28px;
   border-radius: 30px;
   color: #fff;
@@ -166,7 +166,8 @@ body {
 .services-section {
   padding: 80px 60px;
   background: #f5f7ff;
-  color: #000;
+  color: #6fc7f3;
+  text-decoration: underline;
 }
 
 .services-section h2 {
@@ -429,3 +430,5 @@ footer {
     margin-left: 0;
   }
 }
+
+
