@@ -15,7 +15,9 @@ body {
   color: #fff;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
   position: sticky;
   top: 0;
@@ -29,12 +31,30 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo image */
+.nav-logo {
+  width: 48px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Company name text */
 .company-name {
   font-size: 22px;
   font-weight: 800;
   letter-spacing: 1px;
+  color: #fff;
+  line-height: 1;
 }
 
+/* Nav links */
 .links a {
   margin-left: 25px;
   color: #fff;
@@ -58,7 +78,9 @@ body {
   width: 100%;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -95,7 +117,9 @@ body {
   transform: translateY(-4px);
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 .about-us {
   padding: 80px 60px;
   text-align: center;
@@ -124,7 +148,9 @@ body {
   border-radius: 16px;
 }
 
-/* SERVICES */
+/* =========================
+   SERVICES
+========================= */
 .services-section {
   padding: 80px 60px;
   background: #f5f7ff;
@@ -162,7 +188,9 @@ body {
   color: var(--brand-blue);
 }
 
-/* TESTIMONIALS */
+/* =========================
+   TESTIMONIALS
+========================= */
 .testimonials {
   padding: 80px 60px;
 }
@@ -190,7 +218,9 @@ body {
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
-/* MAP */
+/* =========================
+   MAP
+========================= */
 .map-section {
   padding: 80px 60px;
   background: #f5f7ff;
@@ -198,7 +228,9 @@ body {
   text-align: center;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
   background: #000;
   padding: 60px;
@@ -234,7 +266,9 @@ footer {
   margin-bottom: 10px;
 }
 
-/* WHATSAPP */
+/* =========================
+   WHATSAPP FLOAT BUTTON
+========================= */
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -260,7 +294,9 @@ footer {
   transform: scale(1.1) translateY(-4px);
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 900px) {
   .about-content {
     flex-direction: column;
@@ -272,5 +308,35 @@ footer {
 
   .hero-name {
     font-size: 46px;
+  }
+
+  .nav-logo {
+    width: 38px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .links a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 25px;
+  }
+
+  .links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .links a {
+    margin-left: 0;
   }
 }
