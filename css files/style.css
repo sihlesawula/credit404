@@ -299,10 +299,10 @@ footer {
   /* Fallback color */
   background-color: #000;
 
-  /* Background image + dark overlay */
+  
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
-    url("../images/footer-bg.jpg"); /* 👈 change to your real image */
+    url("../images/heroimage2.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
