@@ -88,7 +88,7 @@ body {
   padding: 0 80px;
   background:
     linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url(images/heroimage2.jpg) center/cover no-repeat;
+    url(images/bkg-hero.png) center/cover no-repeat;
 }
 
 .hero-name {
