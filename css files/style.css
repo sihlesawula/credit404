@@ -214,15 +214,17 @@ body {
   padding: 80px 60px;
   background: #f5f7ff;
   --brand-gold: #dbb60e;
-  text-decoration: underline;
 }
 
+/* Section heading */
 .services-section h2 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 50px;
+  color: #000;              /* 👈 Our Services = black */
 }
 
+/* Cards container */
 .services-container {
   display: flex;
   gap: 30px;
@@ -230,6 +232,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Individual service card */
 .service-card {
   width: 260px;
   padding: 30px 25px;
@@ -240,12 +243,23 @@ body {
   transition: 0.3s;
 }
 
+/* Hover effect */
 .service-card:hover {
   transform: translateY(-10px);
 }
 
+/* Card title */
 .service-card h3 {
-  color: var(--brand-dark);
+  color: #000;              /* 👈 Heading inside card = black */
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+/* Card paragraph */
+.service-card p {
+  color: #000;              /* 👈 Paragraph text = black */
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 /* =========================
