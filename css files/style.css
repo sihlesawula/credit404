@@ -213,7 +213,7 @@ body {
 .services-section {
   padding: 80px 60px;
   background: #f5f7ff;
-  color: #6fc7f3;
+  --brand-gold: #dbb60e;
   text-decoration: underline;
 }
 
@@ -245,7 +245,7 @@ body {
 }
 
 .service-card h3 {
-  color: var(--brand-blue);
+  color: var(--brand-dark);
 }
 
 /* =========================
