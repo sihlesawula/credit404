@@ -263,47 +263,58 @@ body {
 }
 
 /* =========================
-   DUAL VIDEO SECTION
+   VIDEO SHOWCASE (4 VIDEOS)
 ========================= */
 .video-showcase {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 videos side by side */
   width: 100%;
   height: 500px;
-  background: #000; /* prevents empty space from looking broken */
+  background: #000;
 }
 
 .video-wrapper {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #000;
 }
 
 .video-wrapper video {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* 👈 SHOW FULL VIDEO, NO CROP */
+  object-fit: contain; /* 👈 FULL VIDEO, NO CROP */
   background: #000;
 }
 
 /* =========================
-   RESPONSIVE
+   TABLET (2 x 2 GRID)
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .video-showcase {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
     height: auto;
   }
 
   .video-wrapper {
-    width: 100%;
-    height: 300px;
+    height: 320px;
+  }
+}
+
+/* =========================
+   MOBILE (1 PER ROW)
+========================= */
+@media (max-width: 600px) {
+  .video-showcase {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+
+  .video-wrapper {
+    height: 260px;
   }
 
   .video-wrapper video {
-    width: 100%;
-    height: 100%;
     object-fit: contain;
   }
 }
