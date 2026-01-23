@@ -189,6 +189,44 @@ body {
 }
 
 /* =========================
+   DUAL VIDEO SECTION
+========================= */
+.video-showcase {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .video-showcase {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+
+/* =========================
    TESTIMONIALS
 ========================= */
 .testimonials {
