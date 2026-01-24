@@ -571,7 +571,7 @@ body {
   /* Dimmed background image */
   background-image:
     linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-    url("../images/testimonials-bg.jpg"); /* 👈 change to your image */
+    url("../images/our-clients.jpg"); /* 👈 change to your image */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
