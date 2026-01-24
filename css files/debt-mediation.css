@@ -1,0 +1,95 @@
+/* =========================
+   SERVICE PAGE (SHARED)
+========================= */
+
+.service-hero {
+  padding: 90px 60px;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+              url("images/heroimage2.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.service-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.service-hero p {
+  font-size: 18px;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.service-content {
+  padding: 80px 60px;
+  background: #f5f7ff;
+}
+
+.service-text {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #000;
+}
+
+.service-text h2 {
+  font-size: 26px;
+  margin: 35px 0 15px;
+  color: #000;
+}
+
+.service-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.service-text ul,
+.service-text ol {
+  margin: 15px 0 25px 20px;
+}
+
+.service-text li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.service-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #05a0ee, #0077cc);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .service-hero {
+    padding: 70px 25px;
+  }
+
+  .service-hero h1 {
+    font-size: 32px;
+  }
+
+  .service-content {
+    padding: 60px 25px;
+  }
+}
