@@ -1,0 +1,261 @@
+/* =========================
+   SERVICE HERO
+========================= */
+.service-hero {
+  min-height: 70vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+    url("../images/debt-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  color: #fff;
+}
+
+.service-hero-content {
+  max-width: 600px;
+}
+
+.service-hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.service-hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.service-cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #1ed760, #0fa958);
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  transition: 0.3s ease;
+}
+
+.service-cta-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   INTRO
+========================= */
+.service-intro {
+  padding: 80px 60px;
+}
+
+.service-intro-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-intro-text h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.service-intro-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.service-intro-image img {
+  width: 420px;
+  border-radius: 18px;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+.service-benefits {
+  padding: 80px 60px;
+  background: #f5f7ff;
+}
+
+.service-benefits h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.benefits-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.benefit-item {
+  width: 260px;
+  background: #fff;
+  padding: 26px 24px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.benefit-item h3 {
+  color: var(--brand-gold);
+  margin-bottom: 12px;
+}
+
+/* =========================
+   PROCESS
+========================= */
+.service-process {
+  padding: 80px 60px;
+}
+
+.service-process h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.process-steps {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.process-step {
+  width: 260px;
+  background: #fff;
+  padding: 30px 26px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--brand-gold);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+/* =========================
+   FAQ
+========================= */
+.service-faq {
+  padding: 80px 60px;
+  background: #f5f7ff;
+}
+
+.service-faq h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 26px 24px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.faq-item h3 {
+  margin-bottom: 10px;
+  color: var(--brand-gold);
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.service-contact {
+  padding: 90px 60px;
+}
+
+.service-contact h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background: var(--brand-gold);
+  border: none;
+  padding: 14px 26px;
+  border-radius: 26px;
+  color: #000;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* =========================
+   SIMPLE FOOTER
+========================= */
+.simple-footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 30px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .service-intro-container {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .service-hero {
+    padding: 0 30px;
+  }
+}
