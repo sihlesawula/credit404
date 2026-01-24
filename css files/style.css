@@ -411,7 +411,7 @@ body {
   text-align: center;
   font-size: 36px;
   margin-bottom: 50px;
-  color: #000;              /* 👈 Our Services = black */
+  color: #000;
 }
 
 /* Cards container */
@@ -420,36 +420,83 @@ body {
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* Individual service card */
 .service-card {
-  width: 260px;
-  padding: 30px 25px;
+  width: 280px;
+  padding: 34px 28px;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
   border-top: 5px solid var(--brand-gold);
-  transition: 0.3s;
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hover effect */
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2);
 }
 
 /* Card title */
 .service-card h3 {
-  color: #000;              /* 👈 Heading inside card = black */
-  margin-bottom: 12px;
+  color: #000;
+  margin-bottom: 14px;
   font-size: 20px;
+  font-weight: 700;
 }
 
 /* Card paragraph */
 .service-card p {
-  color: #000;              /* 👈 Paragraph text = black */
+  color: #000;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+
+/* Learn more link */
+.service-link {
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--brand-gold);
+  font-size: 14px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.service-link::after {
+  content: "→";
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.service-link:hover {
+  color: #000;
+}
+
+.service-link:hover::after {
+  transform: translateX(6px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .services-section {
+    padding: 60px 30px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 420px;
+  }
 }
 
 /* =========================
