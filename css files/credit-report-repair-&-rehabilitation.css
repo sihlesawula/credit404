@@ -12,11 +12,13 @@
 
 .service-hero h1 {
   font-size: 42px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 15px;
 }
 
 .service-hero p {
   font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   max-width: 720px;
   margin: 0 auto;
   line-height: 1.6;
@@ -29,11 +31,13 @@
 
 .service-text {
   max-width: 900px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0 auto;
   color: #000;
 }
 
 .service-text h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 26px;
   margin: 35px 0 15px;
   color: #000;
@@ -41,6 +45,7 @@
 
 .service-text p {
   font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1.7;
   margin-bottom: 15px;
 }
@@ -48,11 +53,13 @@
 .service-text ul,
 .service-text ol {
   margin: 15px 0 25px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .service-text li {
   margin-bottom: 10px;
   font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .service-cta {
@@ -92,4 +99,8 @@
   .service-content {
     padding: 60px 25px;
   }
+}
+
+.copyright{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
