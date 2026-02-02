@@ -17,6 +17,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap"
     rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css files/style.css">
@@ -335,44 +340,80 @@
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- ================= CONTACT + FOOTER ================= -->
 
-<section id="contact" class="contact">
+<section id="contact" class="contact-footer">
 
-  <h2>Contact Us</h2>
+  <div class="contact-overlay"></div>
 
-  <div class="contact-grid">
+  <div class="contact-container">
 
-    <div>
+    <!-- LEFT: LOGO + ABOUT -->
+    <div class="footer-brand">
+
+      <img src="images/logo-img.png" alt="Credit Room Logo">
+
+      <p>
+        Credit Room provides trusted credit solutions,
+        helping individuals and businesses achieve
+        financial confidence and long-term stability.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="social-links">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+      </div>
+
+    </div>
+
+
+    <!-- MIDDLE: CONTACT INFO -->
+    <div class="footer-contact">
+
+      <h3>Contact Information</h3>
+
       <p>📞 (+27) 78 849 0289</p>
       <p>📧 info@creditroom.co.za</p>
       <p>📍 13 Mineral Crescent, Crown Mines</p>
+
+      <a href="mailto:info@creditroom.co.za" class="contact-btn">
+        Get In Touch
+      </a>
+
     </div>
 
-    <form>
 
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
+    <!-- RIGHT: QUICK LINKS -->
+    <div class="footer-links">
 
-      <textarea placeholder="Message" required></textarea>
+      <h3>Quick Links</h3>
 
-      <button>Send Message</button>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
 
-    </form>
+    </div>
+
+  </div>
+
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+
+    <p>© 2026 Credit Room. All Rights Reserved.</p>
+    <p>Designed by <span>Syntax District Designs</span></p>
 
   </div>
 
 </section>
 
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-  <p>© 2026 Credit Room</p>
-  <p>Designed by Syntax District</p>
-
-</footer>
 
 
 <script src="script.js"></script>
