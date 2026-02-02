@@ -1,338 +1,265 @@
-/* =========================
-   SERVICE HERO
-========================= */
-.service-hero {
-  min-height: 75vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)),
-    url("../images/debt-hero.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 0 70px;
-  color: #fff;
+:root{
+  --blue:#021bfa;
+  --gold:#dbb60e;
+  --dark:#0a0a0a;
 }
 
-.service-hero-content {
-  max-width: 650px;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-.service-hero h1 {
-  font-size: 56px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-bottom: 22px;
-  line-height: 1.15;
-  letter-spacing: 0.5px;
+body{
+  font-family:'Raleway',sans-serif;
+  line-height:1.6;
+  color:#222;
 }
 
-.service-hero p {
-  font-size: 19px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  line-height: 1.8;
-  margin-bottom: 34px;
-  color: #f0f0f0;
+
+/* ================= HERO ================= */
+
+.service-hero{
+  min-height:80vh;
+  background:url("../images/about-us-images.jpg") center/cover no-repeat;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:0 60px;
 }
 
-.service-cta-btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #1ed760, #0fa958);
-  padding: 15px 34px;
-  border-radius: 999px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.4px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
-  transition: all 0.3s ease;
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.7);
 }
 
-.service-cta-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 38px rgba(0,0,0,0.45);
+.service-hero-content{
+  position:relative;
+  max-width:650px;
+  color:#fff;
 }
 
-/* =========================
-   INTRO
-========================= */
-.service-intro {
-  padding: 90px 70px;
+.service-hero h1{
+  font-size:56px;
+  margin-bottom:20px;
 }
 
-.service-intro-container {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
+.service-hero p{
+  font-size:19px;
+  margin-bottom:30px;
+  color:#ddd;
 }
 
-.service-intro-text h2 {
-  font-size: 36px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-bottom: 22px;
-  line-height: 1.2;
+.service-btn{
+  background:var(--gold);
+  color:#000;
+  text-decoration:none;
+  padding:14px 30px;
+  border-radius:30px;
+  font-weight:700;
+  display:inline-block;
 }
 
-.service-intro-text p {
-  font-size: 16px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  line-height: 1.8;
-  margin-bottom: 18px;
-  color: #222;
+
+/* ================= INTRO ================= */
+
+.service-intro{
+  padding:90px 60px;
 }
 
-.service-intro-image img {
-  width: 440px;
-  border-radius: 22px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+.intro-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
 }
 
-/* =========================
-   BENEFITS
-========================= */
-.service-benefits {
-  padding: 90px 70px;
-  background: linear-gradient(180deg, #f7f9ff, #eef2ff);
+.intro-image img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 12px 30px rgba(0,0,0,.2);
 }
 
-.service-benefits h2 {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-  font-size: 38px;
-  margin-bottom: 60px;
+
+/* ================= BENEFITS ================= */
+
+.service-benefits{
+  background:#f5f7ff;
+  padding:90px 60px;
+  text-align:center;
 }
 
-.benefits-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 32px;
-  max-width: 1100px;
-  margin: auto;
+.benefits-container{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
 }
 
-.benefit-item p{
-  background: #fff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 30px 28px;
-  border-radius: 18px;
-  box-shadow: 0 14px 34px rgba(0,0,0,0.14);
-  transition: all 0.3s ease;
+.benefit-card{
+  background:#fff;
+  padding:35px 25px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
-.benefit-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 44px rgba(0,0,0,0.2);
+.benefit-card i{
+  font-size:32px;
+  color:var(--gold);
+  margin-bottom:15px;
 }
 
-.benefit-item h3 {
-  color: var(--brand-gold);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-bottom: 14px;
-  font-size: 18px;
+
+/* ================= PROCESS ================= */
+
+.service-process{
+  padding:90px 60px;
+  text-align:center;
 }
 
-/* =========================
-   PROCESS
-========================= */
-.service-process {
-  padding: 90px 70px;
+.process-steps{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
 }
 
-.service-process h2 {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 38px;
-  margin-bottom: 60px;
+.process-step{
+  background:#fff;
+  padding:35px 25px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  position:relative;
 }
 
-.process-steps {
-  display: grid;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 34px;
-  max-width: 1100px;
-  margin: auto;
+.process-step span{
+  position:absolute;
+  top:-15px;
+  left:-15px;
+  width:40px;
+  height:40px;
+  background:var(--gold);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
 }
 
-.process-step {
-  background: #fff;
-  padding: 34px 30px 32px;
-  border-radius: 18px;
-  box-shadow: 0 14px 34px rgba(0,0,0,0.14);
-  position: relative;
-  transition: all 0.3s ease;
+
+/* ================= FAQ ================= */
+
+.service-faq{
+  background:#f5f7ff;
+  padding:90px 60px;
 }
 
-.process-step:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 22px 48px rgba(0,0,0,0.22);
+.faq-container{
+  max-width:900px;
+  margin:auto;
 }
 
-.step-number {
-  position: absolute;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  top: -18px;
-  left: -18px;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--brand-gold), #f3d35a);
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+.faq-item{
+  background:#fff;
+  padding:25px;
+  margin-bottom:20px;
+  border-radius:14px;
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
 }
 
-/* =========================
-   FAQ
-========================= */
-.service-faq {
-  padding: 90px 70px;
-  background: linear-gradient(180deg, #f7f9ff, #eef2ff);
+
+/* ================= CONTACT ================= */
+
+.service-contact{
+  background:var(--blue);
+  color:#fff;
+  text-align:center;
+  padding:90px 25px;
 }
 
-.service-faq h2 {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 38px;
-  margin-bottom: 50px;
+
+/* ================= FOOTER ================= */
+
+.service-footer{
+  background:url("../images/heroimage2.jpg") center/cover no-repeat;
+  position:relative;
+  color:#fff;
 }
 
-.faq-container {
-  max-width: 900px;
-  margin: auto;
+.footer-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.85);
 }
 
-.faq-item {
-  background: #fff;
-  padding: 28px 26px;
-  border-radius: 16px;
-  margin-bottom: 22px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.14);
-  transition: all 0.3s ease;
+.footer-content{
+  position:relative;
+  max-width:1200px;
+  margin:auto;
+  padding:70px 25px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
 }
 
-.faq-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 38px rgba(0,0,0,0.22);
+.footer-brand img{
+  width:140px;
+  margin-bottom:15px;
 }
 
-.faq-item h3 {
-  margin-bottom: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: var(--brand-gold);
-  font-size: 17px;
+.social-icons{
+  display:flex;
+  gap:15px;
 }
 
-/* =========================
-   CONTACT FORM
-========================= */
-.service-contact {
-  padding: 100px 70px;
+.social-icons a{
+  width:36px;
+  height:36px;
+  background:var(--gold);
+  color:#000;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.service-contact h2 {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 38px;
-  margin-bottom: 50px;
+.footer-bottom{
+  position:relative;
+  text-align:center;
+  padding:20px;
+  border-top:1px solid rgba(255,255,255,.15);
+  font-size:14px;
 }
 
-.contact-form {
-  max-width: 720px;
-  margin: auto;
-}
 
-.form-row {
-  display: flex;
-  gap: 22px;
-  margin-bottom: 22px;
-}
+/* ================= RESPONSIVE ================= */
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 15px 18px;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  transition: 0.25s ease;
-}
+@media(max-width:900px){
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: var(--brand-gold);
-  box-shadow: 0 0 0 3px rgba(219, 182, 14, 0.25);
-}
-
-.contact-form button {
-  background: linear-gradient(135deg, var(--brand-gold), #f3d35a);
-  border: none;
-  padding: 15px 30px;
-  border-radius: 999px;
-  color: #000;
-  font-weight: 900;
-  cursor: pointer;
-  letter-spacing: 0.4px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  transition: all 0.3s ease;
-}
-
-.contact-form button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(0,0,0,0.35);
-}
-
-/* =========================
-   SIMPLE FOOTER
-========================= */
-.simple-footer {
-  background: #1ad8f1;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #000;
-  text-align: center;
-  padding: 34px;
-  font-size: 14px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 900px) {
-  .service-hero {
-    padding: 0 32px;
-    min-height: 65vh;
+  .intro-container{
+    grid-template-columns:1fr;
   }
 
-  .service-hero h1 {
-    font-size: 40px;
+  .footer-content{
+    grid-template-columns:1fr;
+    text-align:center;
   }
 
-  .service-intro {
-    padding: 70px 30px;
+  .social-icons{
+    justify-content:center;
   }
 
-  .service-intro-container {
-    flex-direction: column;
-    gap: 40px;
+  .service-hero{
+    padding:0 25px;
   }
 
-  .service-intro-image img {
-    width: 100%;
-    max-width: 420px;
+  .service-hero h1{
+    font-size:40px;
   }
 
-  .service-benefits,
-  .service-process,
-  .service-faq,
-  .service-contact {
-    padding: 70px 30px;
-  }
-
-  .form-row {
-    flex-direction: column;
-  }
 }
