@@ -589,7 +589,7 @@ section{padding:80px 60px;}
   position: relative;
   background:
     url("../images/heroimage2.jpg") center/cover no-repeat;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Dark Overlay */
@@ -597,7 +597,7 @@ section{padding:80px 60px;}
 .contact-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(113, 109, 109, 0.75);
+  background: rgba(70, 67, 67, 0.75);
 }
 
 /* Main Container */
