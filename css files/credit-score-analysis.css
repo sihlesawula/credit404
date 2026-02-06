@@ -273,6 +273,12 @@ body {
 }
 
 
+.syntax-brand{
+  color: orange;
+  font-weight: 600; /* optional */
+}
+
+
 /* Social */
 
 .social-icons {

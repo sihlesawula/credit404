@@ -236,6 +236,12 @@ body{
   font-size:14px;
 }
 
+.syntax-brand{
+  color: orange;
+  font-weight: 600; /* optional */
+}
+
+
 
 /* ================= RESPONSIVE ================= */
 
